@@ -17,11 +17,11 @@
 let a, b, c;
 
 function setup() {
-  createCanvas(640, 600);
+  createCanvas(320, 200);
   stroke(255);
-  a = height;
-  b = height;
-  c = height;
+  a = height / 2;
+  b = height / 2;
+  c = height / 2;
 }
 
 function draw() {
@@ -35,27 +35,24 @@ function draw() {
 
   stroke(255);
   line(0, a, width, a);
-  a = a - 0.2;
-  if (a < 0) {
-    a = height;
-  }
+  // a = a - 0.2;
+  // if (a < 0) {
+  //   a = height;
+  // }
 
   stroke(193, 66, 66);
   line(0, b, width, b);
-  b = b - 0.01;
-  if (b < 0) {
-    b = height;
-  }
+  // b = b - 0.01;
+  // if (b < 0) {
+  //   b = height;
+  // }
 
 
   stroke(204, 102, 0); 
   line(0, c, width, c);
-  c = c - 0.001;
-  if (c < 0) {
-    c = height;
-  }
-
+  // c = c - 0.001;
+  // if (c < 0) {
+  //   c = height;
+  // }
 }
-
-
 
